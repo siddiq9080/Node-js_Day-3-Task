@@ -1,0 +1,94 @@
+1. Student Endpoints
+
+
+1.1) Get All Students
+
+Endpoint: GET /students
+Response:
+json
+
+[
+  {
+    "student_id": "string",
+    "student_name": "string",
+    "student_email": "string",
+    "student_DOB": "string",
+    "current_mentor": "string",
+    "previous_mentor": "string"
+  }
+]
+
+1.2 ) Create a Student
+
+Endpoint: POST /students
+Request Body:
+json
+
+{
+  "student_id": "string",
+  "student_name": "string",
+  "student_email": "string",
+  "student_DOB": "string"
+}
+
+1.3)Get a single Student by ID
+
+Endpoint: GET /students/:id
+Response:
+json
+
+{
+  "student_id": "string",
+  "student_name": "string",
+  "student_email": "string",
+  "student_DOB": "string",
+  "current_mentor": "string",
+  "previous_mentor": "string"
+}
+
+
+
+1.4)Update a Student
+
+Endpoint: PUT /students/:id
+Request Body:
+json
+
+{
+  "student_name": "string",
+  "student_email": "string",
+  "student_DOB": "string"
+}
+
+
+1.5)Delete a Student
+
+Endpoint: DELETE /students/:id
+Response:
+json
+
+{
+  "msg": "Student deleted successfully"
+}
+
+
+1.6)Assign a Student to a Mentor
+
+Endpoint: POST /students/:studentId/assign/:mentorId
+
+
+1.7)Change Mentor for a Student
+
+Endpoint: POST /mentors/:mentorId/change/:studentId
+
+
+1.8) Get Previous Mentor for a Student
+
+Endpoint: GET /students/:studentId/previous-mentor
+Response:
+json
+
+{
+  "previous_mentor": "string"
+}
+

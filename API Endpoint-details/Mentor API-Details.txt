@@ -1,0 +1,85 @@
+API Endpoints
+
+1.Mentor Endpoints
+
+Get All Mentors
+
+1.1 ) Endpoint: GET /mentors
+Response:
+
+[
+  {
+    "mentor_id": "string",
+    "mentor_name": "string",
+    "mentor_email": "string",
+    "language": ["string"],
+    "courses": ["string"],
+    "student_list": ["string"]
+  }
+]
+
+1.2 ) Create a Mentor
+
+Endpoint: POST /mentors
+Request Body:
+json
+
+{
+  "mentor_id": "string",
+  "mentor_name": "string",
+  "mentor_email": "string",
+  "language": ["string"],
+  "courses": ["string"]
+}
+
+1.3 ) Get a single Mentor by ID
+
+Endpoint: GET /mentors/:id
+Response:
+{
+  "mentor_id": "string",
+  "mentor_name": "string",
+  "mentor_email": "string",
+  "language": ["string"],
+  "courses": ["string"],
+  "student_list": ["string"]
+}
+
+1.4 ) Update a Mentor
+
+Endpoint: PUT /mentors/:id
+Request Body:
+json
+
+{
+  "mentor_name": "string",
+  "language": ["string"],
+  "courses": ["string"]
+}
+
+1.5) Delete a Mentor
+
+Endpoint: DELETE /mentors/:id
+Response:
+json
+
+{
+  "msg": "Mentor deleted successfully and students reassigned"
+}
+
+
+1.6 ) Get Students Assigned to a Mentor
+
+Endpoint: GET /mentors/:mentorId/students
+Response:
+json
+Copy code
+[
+  {
+    "student_id": "string",
+    "student_name": "string",
+    "student_email": "string",
+    "current_mentor": "string",
+    "previous_mentor": "string"
+  }
+]

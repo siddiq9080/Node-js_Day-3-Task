@@ -1,0 +1,19 @@
+{
+  "name": "day-3",
+  "version": "1.0.0",
+  "description": "DAy3 task",
+  "main": "express-server.js",
+  "type": "module",
+  "scripts": {
+    "test": "HTTP,Express"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "mongodb": "^6.10.0",
+    "mongoose": "^8.7.2",
+    "uuid": "^10.0.0"
+  }
+}
