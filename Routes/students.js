@@ -10,7 +10,7 @@ const studentsRouter = express.Router();
 
 studentsRouter.get("/", async (req, res) => {
   try {
-    const students = await studentModel.find({}).select("-_id"); // Exclude the _id field
+    const students = await studentModel.find({}).select("-_id"); 
     res.json(students);
   } catch (error) {
     res.status(500).json({ msg: "Error retriving students", error: e.message });
@@ -35,7 +35,7 @@ studentsRouter.post("/", async (req, res) => {
         ...stuData,
       });
 
-      await studentObj.save(); // This saves the student to the database
+      await studentObj.save(); 
       res
         .status(201)
         .json({ msg: "Student created successfully", student: studentObj });
@@ -147,7 +147,7 @@ studentsRouter.post(
           previousMentor.student_list = previousMentor.student_list.filter(
             (id) => id !== student_id
           );
-          await previousMentor.save(); // Save previous mentor's updated list
+          await previousMentor.save(); 
         }
       }
 
@@ -156,7 +156,7 @@ studentsRouter.post(
 
       // Add student to mentor's list if not already present
       if (!mentor.student_list.includes(student_id)) {
-        mentor.student_list.push(student_id); // Add student to mentor's list
+        mentor.student_list.push(student_id); 
       }
 
       // Save the updates

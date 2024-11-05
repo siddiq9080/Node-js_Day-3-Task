@@ -4,8 +4,10 @@ API Endpoints
 
 Get All Mentors
 
-1.1 ) Endpoint: GET /mentors
+1.1 ) Endpoint: GET --> https://node-js-day-3-task-2ftq.onrender.com/mentors
 Response:
+
+
 
 [
   {
@@ -20,7 +22,7 @@ Response:
 
 1.2 ) Create a Mentor
 
-Endpoint: POST /mentors
+Endpoint: POST --> https://node-js-day-3-task-2ftq.onrender.com/mentors
 Request Body:
 json
 
@@ -34,7 +36,7 @@ json
 
 1.3 ) Get a single Mentor by ID
 
-Endpoint: GET /mentors/:id
+Endpoint: GET --> https://node-js-day-3-task-2ftq.onrender.com/mentors/:id
 Response:
 {
   "mentor_id": "string",
@@ -47,7 +49,7 @@ Response:
 
 1.4 ) Update a Mentor
 
-Endpoint: PUT /mentors/:id
+Endpoint: PUT --> https://node-js-day-3-task-2ftq.onrender.com/mentors/:id
 Request Body:
 json
 
@@ -59,7 +61,7 @@ json
 
 1.5) Delete a Mentor
 
-Endpoint: DELETE /mentors/:id
+Endpoint: DELETE --> https://node-js-day-3-task-2ftq.onrender.com/mentors/:id
 Response:
 json
 
@@ -70,7 +72,7 @@ json
 
 1.6 ) Get Students Assigned to a Mentor
 
-Endpoint: GET /mentors/:mentorId/students
+Endpoint: GET --> https://node-js-day-3-task-2ftq.onrender.com/mentors/:mentorId/students
 Response:
 json
 Copy code

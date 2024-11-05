@@ -1,9 +1,8 @@
 1. Student Endpoints
 
-
 1.1) Get All Students
 
-Endpoint: GET /students
+Endpoint: GET --> https://node-js-day-3-task-2ftq.onrender.com/students
 Response:
 json
 
@@ -20,7 +19,7 @@ json
 
 1.2 ) Create a Student
 
-Endpoint: POST /students
+Endpoint: POST --> https://node-js-day-3-task-2ftq.onrender.com/students
 Request Body:
 json
 
@@ -33,7 +32,7 @@ json
 
 1.3)Get a single Student by ID
 
-Endpoint: GET /students/:id
+Endpoint: GET --> https://node-js-day-3-task-2ftq.onrender.com/students/:id
 Response:
 json
 
@@ -50,7 +49,7 @@ json
 
 1.4)Update a Student
 
-Endpoint: PUT /students/:id
+Endpoint: PUT --> https://node-js-day-3-task-2ftq.onrender.com/students/:id
 Request Body:
 json
 
@@ -63,7 +62,7 @@ json
 
 1.5)Delete a Student
 
-Endpoint: DELETE /students/:id
+Endpoint: DELETE --> https://node-js-day-3-task-2ftq.onrender.com/students/:id
 Response:
 json
 
@@ -74,17 +73,17 @@ json
 
 1.6)Assign a Student to a Mentor
 
-Endpoint: POST /students/:studentId/assign/:mentorId
+Endpoint: POST --> https://node-js-day-3-task-2ftq.onrender.com/students/:studentId/assign/:mentorId
 
 
 1.7)Change Mentor for a Student
 
-Endpoint: POST /mentors/:mentorId/change/:studentId
+Endpoint: POST --> https://node-js-day-3-task-2ftq.onrender.com/mentors/:mentorId/change/:studentId
 
 
 1.8) Get Previous Mentor for a Student
 
-Endpoint: GET /students/:studentId/previous-mentor
+Endpoint: GET --> https://node-js-day-3-task-2ftq.onrender.com/students/:studentId/previous-mentor
 Response:
 json
 

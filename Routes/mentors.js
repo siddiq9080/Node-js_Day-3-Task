@@ -113,7 +113,7 @@ mentorsRouter.delete("/:id", async (req, res) => {
 
 mentorsRouter.post("/:mentor_id/assign-students", async (req, res) => {
   const { mentor_id } = req.params;
-  const { student_ids } = req.body; // Expecting an array of student IDs
+  const { student_ids } = req.body;
 
   try {
     const mentor = await mentorModel.findOne({ mentor_id });
@@ -167,7 +167,7 @@ mentorsRouter.post("/:mentor_id/change/:student_id", async (req, res) => {
     if (!mentor) return res.status(404).json({ msg: "Mentor not found" });
 
     // Update the student's current mentor and previous mentor
-    student.previous_mentor = student.current_mentor; // Keep track of the previous mentor
+    student.previous_mentor = student.current_mentor;
     student.current_mentor = mentor_id;
 
     await student.save();
